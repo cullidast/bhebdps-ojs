@@ -34,7 +34,7 @@ describe("About Applying What We Have Learnt (about_applying_what_we_have_learnt
       }
     }
 
-    expect(productsICanEat.length).toBe(FILL_ME_IN);
+    expect(productsICanEat.length).toBe(1); // 
   });
 
   it("should add all the natural numbers below 1000 that are multiples of 3 or 5 (imperative)", function () {
@@ -46,19 +46,20 @@ describe("About Applying What We Have Learnt (about_applying_what_we_have_learnt
       }
     }
 
-    expect(sum).toBe(FILL_ME_IN);
+    expect(sum).toBe(233168); // 
   });
 
   /*********************************************************************************/
-   it("should count the ingredient occurrence (imperative)", function () {
+  it("should count the ingredient occurrence (imperative)", function () {
     let ingredientCount = { "{ingredient name}": 0 };
 
     for (let i = 0; i < products.length; i+=1) {
       for (let j = 0; j < products[i].ingredients.length; j += 1) {
-        ingredientCount[products[i].ingredients[j]] = (ingredientCount[products[i].ingredients[j]] || 0) + 1;
+        ingredientCount[products[i].ingredients[j]] =
+          (ingredientCount[products[i].ingredients[j]] || 0) + 1;
       }
     }
 
-    expect(ingredientCount['mushrooms']).toBe(FILL_ME_IN);
+    expect(ingredientCount['mushrooms']).toBe(2); // 
   });
 });
