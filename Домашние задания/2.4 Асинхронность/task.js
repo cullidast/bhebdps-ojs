@@ -62,5 +62,5 @@ class AlarmClock {
     }
 }
 
-// Сделать AlarmClock глобальным для браузера
+
 window.AlarmClock = AlarmClock;
